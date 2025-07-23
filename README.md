@@ -35,6 +35,7 @@ Classe Forme
         + perimetre() : float
         (hérite indirectement via Rectangle)
 
+
 📌 Conseils pour la version graphique :
 
 Utiliser des flèches d’héritage (Forme → Rectangle, etc.)
