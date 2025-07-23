@@ -1,37 +1,37 @@
 Classe Forme
 ├── + surface() : float
 └── + perimetre() : float
-       ↑
-       │
-       ├── Classe Rectangle
-       │     - longueur : float
-       │     - largeur  : float
-       │     + surface() : float
-       │     + perimetre() : float
-       │
-       ├── Classe Carré
-       │     - côté : float
-       │     + surface() : float
-       │     + perimetre() : float
-       │     (hérite indirectement via Rectangle)
-       │
-       ├── Classe Cercle
-       │     - rayon : float
-       │     + surface() : float
-       │     + perimetre() : float
-       │
-       ├── Classe Triangle
-       │     - côté1 : float
-       │     - côté2 : float
-       │     - côté3 : float
-       │     + surface() : float
-       │     + perimetre() : float
-       │
-       └── Classe TriangleRectangle
-             - base    : float  
-             - hauteur : float  
-             + surface() : float  
-             + perimetre() : float
+     ▲
+     │
+├── Classe Rectangle
+│     - longueur : float
+│     - largeur : float
+│     + surface() : float
+│     + perimetre() : float
+│
+├── Classe Carré
+│     - côté : float
+│     + surface() : float
+│     + perimetre() : float
+│     (hérite indirectement via Rectangle)
+│
+├── Classe Cercle
+│     - rayon : float
+│     + surface() : float
+│     + perimetre() : float
+│
+├── Classe Triangle
+│     - côté1 : float
+│     - côté2 : float
+│     - côté3 : float
+│     + surface() : float
+│     + perimetre() : float
+│
+└── Classe TriangleRectangle
+      - base : float
+      - hauteur : float
+      + surface() : float
+      + perimetre() : float
 
 
 📌 Conseils pour la version graphique :
