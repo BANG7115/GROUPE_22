@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Projet : Formes Géométriques \\ Groupe 22}
+\author{BAMPIRE}
+\date{\today}
+
+\definecolor{codegray}{gray}{0.9}
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily,
+  frame=single,
+  language=Python
+}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Ce rapport présente deux approches de modélisation orientée objet appliquées aux formes géométriques : une version utilisant l’héritage et une version basée sur la composition.
+
+\section{Version avec héritage}
+\subsection{Structure}
+Toutes les classes héritent d’une classe abstraite \texttt{Forme}. Voici un extrait de code :
+
+\begin{lstlisting}
+class Forme:
+    def surface(self):
+        raise NotImplementedError()
+    def perimetre(self):
+        raise NotImplementedError()
+\end{lstlisting}
+
+\subsection{Diagramme UML}
+\includegraphics[width=\textwidth]{uml_heritage.png}
+
+\subsection{Tests}
+...
+
+\section{Version avec composition}
+\subsection{Structure}
+Les classes sont toutes indépendantes. Exemple :
+
+\begin{lstlisting}
+class Rectangle:
+    def __init__(self, longueur, largeur):
+        self.longueur = longueur
+        self.largeur = largeur
+\end{lstlisting}
+
+\subsection{Diagramme UML}
+\includegraphics[width=\textwidth]{uml_composition.png}
+
+\subsection{Tests}
+...
+
+\section{Analyse comparative}
+...
+
+\section{Conclusion}
+...
+
+\end{document}
